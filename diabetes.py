@@ -56,10 +56,6 @@ gender = st.sidebar.selectbox("성별", ['여성', '남성'])
 smoking = st.sidebar.selectbox("흡연 이력", ['No Info', 'ever', 'not current', 'never', 'former', 'current'])
 
 # 탭 1: 데이터 탐색
-import streamlit as st
-import matplotlib.pyplot as plt
-import seaborn as sns
-import pandas as pd
 
 # EDA 섹션 시작
 import streamlit as st
