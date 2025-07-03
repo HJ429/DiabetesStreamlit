@@ -12,7 +12,15 @@ from sklearn.metrics import classification_report, confusion_matrix, roc_curve, 
 import numpy as np
 
 # 한글 폰트 설정
-plt.rc('font', family='Malgun Gothic')
+# 운영체제별 한글 폰트 설정
+if platform.system() == 'Windows':
+    plt.rc('font', family='Malgun Gothic')      # Windows 기본 한글 폰트
+elif platform.system() == 'Darwin':
+    plt.rc('font', family='AppleGothic')         # macOS 기본 한글 폰트
+else:
+    plt.rc('font', family='NanumGothic')         # 리눅스 / 서버용 폰트
+
+# 음수 부호 깨짐 방지
 plt.rcParams['axes.unicode_minus'] = False
 
 # 데이터 로딩 및 전처리
