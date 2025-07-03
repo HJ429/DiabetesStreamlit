@@ -11,6 +11,8 @@ from imblearn.over_sampling import SMOTE
 from sklearn.metrics import classification_report, confusion_matrix, roc_curve, auc
 import numpy as np
 
+pip install -r requirements.txt
+
 # 한글 폰트 설정
 plt.rc('font', family='Malgun Gothic')
 plt.rcParams['axes.unicode_minus'] = False
