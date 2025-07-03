@@ -8,3 +8,4 @@ xgboost
 numpy
 python-dateutil
 pytz
+python-3.10.11
