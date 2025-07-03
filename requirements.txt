@@ -2,9 +2,9 @@ streamlit
 pandas
 seaborn
 matplotlib
-scikit-learn==1.2.2
+scikit-learn
 xgboost
 numpy
 python-dateutil
 pytz
-imbalanced-learn==0.10.1
+imbalanced-learn
