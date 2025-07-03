@@ -13,12 +13,8 @@ import numpy as np
 
 # 한글 폰트 설정
 # 운영체제별 한글 폰트 설정
-if platform.system() == 'Windows':
-    plt.rc('font', family='Malgun Gothic')      # Windows 기본 한글 폰트
-elif platform.system() == 'Darwin':
-    plt.rc('font', family='AppleGothic')         # macOS 기본 한글 폰트
-else:
-    plt.rc('font', family='NanumGothic')         # 리눅스 / 서버용 폰트
+plt.rc('font', family='Malgun Gothic')
+plt.rcParams['axes.unicode_minus'] = False
 
 # 음수 부호 깨짐 방지
 plt.rcParams['axes.unicode_minus'] = False
